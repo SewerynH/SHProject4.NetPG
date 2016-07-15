@@ -10,5 +10,6 @@ namespace WpfApplication2
     {
          string ConvertToString(double x);
          double ConvertToDouble(string x);
+         double EstablishedMultiplier(double x);
     }
 }

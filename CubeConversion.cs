@@ -18,24 +18,24 @@ namespace WpfApplication2
             string y = Convert.ToString(x);
             return y;
         }
-
+        public double EstablishedMultiplier(double x)
+        {
+            return Math.Round(x, 1) ;
+        }
         public double Meters(string z)
         {
             double result = ConvertToDouble(z);
-            result *= 1000000;
-            return result;
+            return result * EstablishedMultiplier(1000000);
         }
         public double Inch(string x)
         {
             double result = ConvertToDouble(x);
-            result *= 16.387;
-            return result;
+            return result * EstablishedMultiplier(16.387492);
         }
         public double Gallon(string x)
         {
             double result = ConvertToDouble(x);
-            result *= 3785.142;
-            return result;
+            return result * EstablishedMultiplier(3785.142371);
         }
 
 

@@ -22,16 +22,12 @@ namespace WpfApplication2
         public override string SurfaceArea() 
         {
             double score = Math.Round(pi * r * r, 3);
-            string x1 = "Pole powierzchni okregu o r=";
-            string x2 = " wynosi: ";
-            string x3 = " w punkcie: x=";
-            string x4 = ", y=";
-            string y1 = Convert.ToString(r);
-            string y2 = Convert.ToString(score);
-            string y3 = Convert.ToString(base.x);
-            string y4 = Convert.ToString(base.y);
-            
-            return x1 + y1 + x2 + y2 + x3 + y3 + x4 + y4;
+            string x1 = Convert.ToString(r);
+            string x2 = Convert.ToString(score);
+            string x3 = Convert.ToString(base.x);
+            string x4 = Convert.ToString(base.y);
+
+            return "Pole powierzchni okregu o r=" + x1 + " wynosi: " + x2 + " w punkcie: x=" + x3 + ", y=" + x4;
         } 
     } 
 }
